@@ -38,7 +38,7 @@ AniWatt is your hub for watching TV Shows, anime, cartoons; reading books, manga
 - Render
 - Consumet API
 - Jikan API
-- Buncha other things
+- A bunch of other things
 
 ---
 
