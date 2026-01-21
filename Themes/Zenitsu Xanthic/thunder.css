@@ -16,7 +16,7 @@
 
 body { 
   font-family: 'Poppins', 'Oswald', sans-serif; 
-  background: linear-gradient(180deg, var(--bg) 0%, #0b0b10 100%); 
+  background: linear-gradient(180deg, var(--bg) 0%, #0d0d0d 100%); 
   color: #fff; 
   -webkit-font-smoothing:antialiased;
 }
@@ -415,3 +415,4 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.02);
   margin-top: 30px;
 }
+
