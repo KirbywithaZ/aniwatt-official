@@ -4,10 +4,12 @@
   box-sizing: border-box;
 }
 
+/* 0d0d0d */
+
 :root{
   --bg: #0a0a0a; /* dark grey/black background */
   --card: #181521; /* keep card slightly lighter */
-  --panel: #1f1b26;
+  --panel: #232323;
   --muted: #bfb6c6;
   --accent-yellow: #ffd700; /* gold/yellow */
   --accent-darkyellow: #ffb800; /* slightly darker gold for gradients */
@@ -415,4 +417,5 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.02);
   margin-top: 30px;
 }
+
 
