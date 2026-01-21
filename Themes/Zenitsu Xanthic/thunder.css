@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* Github, for the love of God, stop wasting my damn time and push the freaking changes! */
+
 :root{
   --bg: #0a0a0a; /* dark grey/black background */
   --card: #181521; /* keep card slightly lighter */
@@ -415,6 +417,7 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.02);
   margin-top: 30px;
 }
+
 
 
 
