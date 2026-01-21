@@ -14,11 +14,11 @@
   --accent-dark: #2a2530;
 }
 
-body { 
-  font-family: 'Poppins', 'Oswald', sans-serif; 
-  background: linear-gradient(180deg, var(--bg) 0%, #0b0b10 100%); 
-  color: #fff; 
-  -webkit-font-smoothing:antialiased;
+body {  
+  font-family: 'Oswald', sans-serif;
+  background: linear-gradient(180deg, var(--bg) 0%, #0b0b10 100%);  
+  color: #fff;  
+  -webkit-font-smoothing: antialiased;
 }
 
 /* MAIN HEADER */
@@ -131,9 +131,9 @@ body {
 
 /* Secondary nav */
 .secondary-header { 
-  background: transparent;
-  padding: 10px 0; 
-  border-bottom: 1px solid rgba(255,255,255,0.02);
+  background: #1a1a1a; /* Dark Grey background */
+  padding: 10px 0;  
+  border-bottom: 2px solid var(--accent-yellow); /* Gold accent border */
 }
 
 .nav-links { 
@@ -143,16 +143,18 @@ body {
   list-style: none; 
 }
 
-.nav-links a { 
-  color: #bdb1c8; 
-  text-decoration: none; 
-  padding: 6px 10px; 
-  font-weight:600;
-  font-size:14px;
+.nav-links a {  
+  color: #999; /* Grey text */
+  text-decoration: none;  
+  padding: 6px 10px;  
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
-.nav-links a:hover { 
-  color: var(--accent-yellow); 
+.nav-links a:hover {  
+  color: var(--accent-yellow);
 }
 
 /* SPOTLIGHT (hero) */
@@ -249,13 +251,14 @@ body {
 }
 
 /* single item */
-.carousel-item{
+.carousel-item {
   width: 160px;
   flex: 0 0 auto;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  position:relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-left: 35px; 
 }
 
 /* poster */
@@ -271,26 +274,31 @@ body {
 /* vertical title on left (rotated) */
 .carousel-item .vtitle {
   position: absolute;
-  left: -46px;
-  top: 34%;
-  transform: rotate(-90deg);
-  transform-origin: left top;
-  width:200px;
-  text-align:center;
-  font-weight:700;
-  color:#e9e0ea;
-  font-size:14px;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
+  /* Adjusting coordinates to prevent overlap */
+  left: -25px; 
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: center;
+  width: 230px; /* Match height of the poster */
+  text-align: right;
+  font-weight: 400;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none; /* Allows clicking the image "through" the text */
 }
 
 /* index (yellow) */
 .carousel-item .index {
-  margin-top:8px;
-  color:var(--accent-yellow);
-  font-weight:800;
-  font-size:18px;
+  margin-top: 12px;
+  margin-left: -35px;
+  color: var(--accent-yellow);
+  font-weight: 700;
+  font-size: 20px;
 }
 
 /* small responsive */
@@ -422,6 +430,7 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.02);
   margin-top: 30px;
 }
+
 
 
 
