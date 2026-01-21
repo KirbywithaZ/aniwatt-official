@@ -163,10 +163,10 @@ body {
   /* Neutral Dark Charcoal Gradient */
   background: linear-gradient(
     90deg, 
-    rgba(15, 15, 15, 1) 0%,     /* Solid dark grey on the left */
-    rgba(15, 15, 15, 0.8) 40%,  /* Starts fading */
-    rgba(15, 15, 15, 0.3) 100%  /* Shows the image on the right */
-  ), 
+    rgba(26, 26, 26, 1) 0%,     /* Fully opaque grey on text side */
+    rgba(26, 26, 26, 0.8) 40%,   /* Gradual fade */
+    rgba(26, 26, 26, 0.2) 100%   /* Very light tint over the image */
+  ),
   url('Images/placeholder-banner.jpg') right/cover no-repeat;
   overflow: hidden; 
   margin-top: 18px; 
@@ -422,6 +422,7 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.02);
   margin-top: 30px;
 }
+
 
 
 
