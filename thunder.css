@@ -160,11 +160,18 @@ body {
   position: relative; 
   width: 100%; 
   height: 420px; 
-  background: linear-gradient(180deg, rgba(20,14,28,0.85), rgba(14,10,20,0.95)), url('Images/placeholder-banner.jpg') right/cover no-repeat;
+  /* Neutral Dark Charcoal Gradient */
+  background: linear-gradient(
+    90deg, 
+    rgba(15, 15, 15, 1) 0%,     /* Solid dark grey on the left */
+    rgba(15, 15, 15, 0.8) 40%,  /* Starts fading */
+    rgba(15, 15, 15, 0.3) 100%  /* Shows the image on the right */
+  ), 
+  url('Images/placeholder-banner.jpg') right/cover no-repeat;
   overflow: hidden; 
   margin-top: 18px; 
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
 }
 
 .spotlight-content{
@@ -415,5 +422,6 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.02);
   margin-top: 30px;
 }
+
 
 
